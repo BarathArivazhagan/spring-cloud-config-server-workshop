@@ -1,6 +1,6 @@
 logging:
   level:
-    root: debug
+    root: info
 management:
   security:
     enabled: false
@@ -9,5 +9,8 @@ server:
 spring:
   application:
     name: config-client-sample
+  autoconfigure:
+    exclude:
+      - SpringApplicationAdminJmxAutoConfiguration.class
 
  
