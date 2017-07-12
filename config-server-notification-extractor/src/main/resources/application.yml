@@ -1,0 +1,11 @@
+
+management:
+  security:
+    enabled: false
+server:
+  port: 9000
+spring:
+  application:
+    name: spring-config-server
+
+ 
