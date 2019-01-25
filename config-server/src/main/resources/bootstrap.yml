@@ -3,7 +3,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/BarathArivazhagan/config-server-repository.git
+          uri: https://github.com/BarathArivazhagan/config-server-repository
           
           
    
