@@ -26,7 +26,7 @@ public class SimplePropertyConfiguration {
 	@PostConstruct
 	public void init(){
 		logger.info("NAME ===>  {}",name);
-		logger.info("AGE  ===> ",age);
+		logger.info("AGE  ===> {}",age);
 	}
 
 }
