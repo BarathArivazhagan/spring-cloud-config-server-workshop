@@ -5,7 +5,7 @@ COPY pom.xml /app
 RUN cd /app && mvn clean package
 
 FROM openjdk:8-jdk-alpine AS final-build
-RUN adduser -D configclient
-USER configclient
-COPY --from=build /app/target/config-client-*.jar app.jar
+RUN adduser -D configserver
+USER configserver
+COPY --from=build /app/target/config-server-*.jar app.jar
 ENTRYPOINT ["java","-jar","app.jar"]

@@ -23,6 +23,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
+		<start-class>com.barath.app.ConfigClientApplication</start-class>
 	</properties>
 
 	<dependencies>
