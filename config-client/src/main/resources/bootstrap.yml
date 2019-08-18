@@ -1,6 +1,8 @@
 spring:
+  application:    name: config-client
   cloud:
     config:
-      uri: http://localhost:8888
-      name: config-client-sample
-      
+      discovery:        service-id: config-server
+        enabled: true 
+      name: config-client-sample  profiles:    active:    - eureka
+       
